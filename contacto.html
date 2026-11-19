@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- <form action="https://httpbin.org/get" method="get">
+<label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre">
+
+<label for="correoelectronico">Correo Electrónico</label>
+<input type="email" id="correoelectronico" name="correoelectronico">
+
+<label for="Asunto">Asunto</label>
+<textarea id="asunto" name="asunto"></textarea>
+
+<label for="Mensajelargo">Mensajelargo</label>
+<textarea id="asunto" name="asunto" rows="5"> </textarea>
+
+<label for="modalidaddelcurso">Modadidad del curso</label>
+<input type="radio" name="modalidaddelcurso">Modalidaddelcurso</label>
+
+</form> -->
+
+<form action="https://httpbin.org/get" method="get">
+
+<p>¿Qué modalidad de curso prefieres?</p>
+
+<input type="radio" id="presencial" name="modalidad" value="presencial">
+<label for="presencial">presencial</label>
+
+<input type="radio" id="mixta" name="modalidad" value="mixta">
+<label for="mixta">mixta</label>
+
+<input type="radio" id="online" name="modalidad" value="online">
+<label for="online">online</label>
+
+<button type="Elegir">Enviar información</button>
+
+<p>¿Qué coño te interesa?</p>
+
+<input type="checkbox" id="javascript"
+name="intereses" value="javascript">
+<label for="javascript">Javascript</label>
+
+<input type="checkbox" id="html"
+name="intereses" value="html">
+<label for="html">Html</label>
+
+<input type="checkbox" id="basedatos"
+name="intereses" value="basedatos">
+<label for="basedatos">Base de datos</label>
+
+<input type="checkbox" id="diseñoweb"
+name="intereses" value="diseñoweb">
+<label for="diseñoweb">Diseño Web</label>
+
+<p>¿Cómo quieres pagar?</p>
+
+<label for="pago" name="pago"></label>
+<select id="pago">
+<option value="tarjeta">Tarjeta bancaria</option>
+<option value="metálico">Con monedillas de céntimo</option>
+<option value="Paytimopal">PayTimopal</option>
+<option value="Transferencia">Transferencia</option>
+</select>
+
+<p>¿De qué parte de Españistán estás?</p>
+<label for="ciudad" name="ciudad"></label>
+<select id="ciudad">
+<option value="default"></option>
+<option value="cordoba">Esaborioland</option>
+<option value="granada">Mala Follá Land</option>
+<option value="sevilla">MiArmaland</option>
+<option value="almeria">Desierto</option>
+<option value="jaen">Olivos por todas partes</option>
+<option value="malaga">Tierra de guiris</option>
+<option value="cadiz">Espetitos caros</option>
+<option value="huelva">Huerva</option>
+</select>
+
+</form>
+
+<br>
+
+<form>
+    <fieldset>
+<legend>Datos personales</legend>
+<label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre">
+<label for="edad">edad</label>
+<input type="text" id="edad" name="edad">
+    </fieldset>
+<fieldset>
+<legend>Datos de contacto</legend>
+<label for="correo">Correo</label>
+<input type="email" id="correo" name="correo">
+<label for="codigopostal">Código postal</label>
+<input type="number" id="codigopostal" name="codigopostal">
+</fieldset>
+<button type="Elegir">Enviar información</button>
+</form>
+
+    
+</body>
+</html>
