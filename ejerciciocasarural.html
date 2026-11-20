@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio casa rural</title>
+</head>
+
+<body style="background-color: blueviolet; font-family: 'Courier New', Courier, monospace;">
+
+    <!--Nombre y apellidos-->
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required minlength="3">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required minlength="3">
+        <!--Correo electrónico y teléfono-->
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" maxlength="9">
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" min="18" maxl="100">
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <br>
+
+    <form>
+
+        <p>¿Qué tipo de habitación deseas?</p>
+        <label for="habitación" name="habitacion"></label>
+        <select id="habitacion">
+            <option value="individual">Individual</option>
+            <option value="doble">Doble</option>
+            <option value="Familiar">Familiar</option>
+        </select>
+
+        <form>
+
+            <label for="fecha">Fecha llegada</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label for="huespedes">Número de huéspedes</label>
+            <input type="number" id="huespedes" name="huespedes" min="1" max="6">
+            <button type="submit">Enviar</button>
+
+            <p>Régimen de alojamiento</p>
+
+            <input type="radio" id="soloalojamiento" name="modalidad" value="soloalojamiento">
+            <label for="soloalojamiento">Sólo alojamiento</label>
+
+            <input type="radio" id="desayuno" name="modalidad" value="desayuno">
+            <label for="desayuno">Desayuno incluído</label>
+
+            <input type="radio" id="mediapension" name="modalidad" value="mediapension">
+            <label for="mediapension">Media pensión</label>
+
+            <p>Servicios adicionales</p>
+
+            <input type="checkbox" id="aparcamiento" name="adicionales" value="aparcamiento">
+            <label for="aparcamiento">Aparcamiento</label>
+
+            <input type="checkbox" id="cuna" name="adicionales" value="cuna">
+            <label for="cuna">Cuna</label>
+
+            <input type="checkbox" id="lavanderia" name="adicionales" value="lavanderia">
+            <label for="lavanderia">Servicio de lavandería</label>
+
+            <input type="checkbox" id="visita" name="adicionales" value="visita">
+            <label for="visita">Visita guiada</label>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+        <br>
+
+        <form action="https://httpbin.org/get" method="get"></form>
+        <label for="codigo">Código de reserva</label>
+        <input type="text" id="codigo" name="codigo" value="CR2026" readonly>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <form action="https://httpbin.org/get" method="get"></form>
+
+    <label for="descuento">Descuento Promocional</label>
+    <input type="text" id="descuento" name="descuento" value="no disponible" disabled>
+    <button type="submit">Enviar</button>
+    </form>
+
+    <form>
+        <label for="codigocliente">Código cliente</label>
+        <!-- <input type="number" id="codigocliente" name="codigocliente" required
+pattern="[0-6]{6}"> -->
+        <input type="number" id="codigocliente" name="codigocliente" pattern="[0-9]{4}" title="Introduce seis números"
+            required>
+    </form>
+    <button type="submit">Enviar</button>
+    </form>
+<form action="https://httpbin.org/get" method="get">
+<p>¿Quieres añadir algún comentario?</p>
+<label for="Mensajelargo"></label>
+<textarea id="asunto" name="asunto" rows="10"> </textarea>
+<button type="reset">Enviar</button>
+</form>
+
+<!--Organización y envío-->
+
+<form action="https://httpbin.org/get" method="get">
+    <fieldset>
+<legend>Datos personales</legend>
+<label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre">
+
+<label for="reserva">Datos de la reserva</label>
+<input type="text" id="reserva" name="reserva">
+
+<br>
+
+<label for="serviciosadicionales">Servicios adicionales</label>
+<input type="text" id="serviciosadicionales" name="serviciosadicionales">
+
+<label for="complementaria">Información complementaria</label>
+<input type="text" id="complementaria" name="complementaria">
+
+<button type="submit">Enviar información</button>
+    </fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
